@@ -15,7 +15,11 @@ const router = createRouter({
       component: () => import('../views/HomeView.vue'),
     
     },
-
+ {
+      path: '/schedule',
+      name: 'schedule',
+      component: () => import('../views/Schedule.vue'),  // ← បន្ថែមនេះ
+    },
 
 
 
