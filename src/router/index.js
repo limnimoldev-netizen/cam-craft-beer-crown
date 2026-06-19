@@ -21,7 +21,11 @@ const router = createRouter({
       component: () => import('../views/Schedule.vue'),  // ← បន្ថែមនេះ
     },
 
-
+{
+      path: '/styles',
+      name: 'styles',
+      component: () => import('../views/Styles.vue'),  // ← Styles.vue មិនមែន Beerstyles.vue
+    },
 
 
     
