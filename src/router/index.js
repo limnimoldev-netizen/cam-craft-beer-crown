@@ -21,7 +21,11 @@ const router = createRouter({
       component: () => import('../views/Schedule.vue'),  // ← បន្ថែមនេះ
     },
 
-
+    {
+      path: "/awards",
+      name: 'award',
+      component: () => import('../views/AwardView.vue')
+    }
 
 
     
