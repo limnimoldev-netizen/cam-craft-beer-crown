@@ -17,7 +17,11 @@ const router = createRouter({
     },
 
 
-
+    {
+      path: "/awards",
+      name: 'award',
+      component: () => import('../views/AwardView.vue')
+    }
 
 
     
