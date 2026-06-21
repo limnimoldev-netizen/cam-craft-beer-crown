@@ -8,9 +8,10 @@ const router = createRouter({
   routes: [
     
 
+    
     {
       
-      path: "/home",
+      path: "/",
       name: 'home',
       component: () => import('../views/HomeView.vue'),
     
@@ -18,12 +19,13 @@ const router = createRouter({
  {
       path: '/schedule',
       name: 'schedule',
-      component: () => import('../views/Schedule.vue'),  // ← បន្ថែមនេះ
+      component: () => import('../views/Schedule.vue'), 
     },
 
     {
       path: "/awards",
       name: 'award',
+      
       component: () => import('../views/AwardView.vue')
     },
 

@@ -11,7 +11,7 @@
 
           <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] mb-6">
             <span class="text-[#5b0014]">Craft Beer</span>
-            <span class="block text-amber-500 mt-1">Crown 2026</span>
+            <span class="block text-[#EE9F27] mt-1">Crown 2026</span>
           </h1>
 
           <p class="text-base md:text-lg text-slate-600 font-medium leading-relaxed mb-10 max-w-xl">
@@ -38,9 +38,10 @@
           </div>
 
           <div class="flex flex-wrap gap-4">
-            <button class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg shadow-amber-500/20 active:scale-[0.98] transition-all duration-200">
-              Vote Now
-            </button>
+              <RouterLink to="/judge" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg shadow-amber-500/20 active:scale-[0.98] transition-all duration-200">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <span>Judge Here</span>
+              </RouterLink>
           </div>
 
         </div>
@@ -124,7 +125,7 @@
           <p class="text-slate-500 text-sm leading-relaxed">
             Meet participating breweries and discover their signature craft beers.
           </p>
-          <div class="mt-6 flex items-center text-[#5b0014] font-bold text-sm">
+          <div class="mt-6 flex items-center text-[#EE9F27] font-bold text-sm">
             Explore Breweries
             <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1.5 transition-transform duration-200"></i>
           </div>
@@ -138,7 +139,7 @@
           <p class="text-slate-500 text-sm leading-relaxed">
             Learn style guidelines, judging standards and tasting profiles.
           </p>
-          <div class="mt-6 flex items-center text-[#5b0014] font-bold text-sm">
+          <div class="mt-6 flex items-center text-[#EE9F27] font-bold text-sm">
             View Styles
             <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1.5 transition-transform duration-200"></i>
           </div>
@@ -152,7 +153,7 @@
           <p class="text-slate-500 text-sm leading-relaxed">
             Explore the full event agenda, workshops and entertainment.
           </p>
-          <div class="mt-6 flex items-center text-[#5b0014] font-bold text-sm">
+          <div class="mt-6 flex items-center text-[#EE9F27] font-bold text-sm">
             View Schedule
             <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1.5 transition-transform duration-200"></i>
           </div>
@@ -166,7 +167,7 @@
           <p class="text-slate-500 text-sm leading-relaxed">
             Discover award categories and championship trophies.
           </p>
-          <div class="mt-6 flex items-center text-[#5b0014] font-bold text-sm">
+          <div class="mt-6 flex items-center text-[#EE9F27] font-bold text-sm">
             Explore Awards
             <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1.5 transition-transform duration-200"></i>
           </div>
@@ -180,7 +181,7 @@
           <p class="text-slate-500 text-sm leading-relaxed">
             Meet the partners supporting Cambodia's craft beer community.
           </p>
-          <div class="mt-6 flex items-center text-[#5b0014] font-bold text-sm">
+          <div class="mt-6 flex items-center text-[#EE9F27] font-bold text-sm">
             Our Sponsors
             <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1.5 transition-transform duration-200"></i>
           </div>

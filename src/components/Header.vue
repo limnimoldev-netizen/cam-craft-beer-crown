@@ -12,7 +12,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-100  shadow-sm">
     <div class="max-w-[1280px] mx-auto px-4 md:px-12">
       <div class="flex h-20 items-center justify-between">
         
@@ -22,7 +22,7 @@ const toggleMenu = () => {
         </div>
 
         <nav class="hidden md:flex items-center gap-8 font-medium text-base">
-          <RouterLink to="/home" class="flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-colors" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
+          <RouterLink to="/" class="flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-colors" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
             <i class="fa-regular fa-house"></i> Home
           </RouterLink>
 
@@ -39,7 +39,7 @@ const toggleMenu = () => {
           </RouterLink>
 
           <RouterLink to="/awards" class="flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-colors" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
-            <Trophy class="w-4 h-4" /> Awards
+            <i class="fa-solid fa-trophy"></i> Awards
           </RouterLink>
 
           <RouterLink to="/sponsors" class="flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-colors" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
@@ -49,7 +49,7 @@ const toggleMenu = () => {
 
         <div class="flex items-center gap-4">
           <div class="hidden md:block">
-            <RouterLink to="/judge" class="inline-flex items-center bg-[#d48806] hover:bg-[#b57305] text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-md text-base tracking-wide gap-2">           
+            <RouterLink to="/judge" class="inline-flex items-center bg-[#EE9F27] hover:bg-[#b57305] text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-md text-base tracking-wide gap-2">           
               <i class="fa-solid fa-check-to-slot"></i> Judge here
             </RouterLink>
           </div>

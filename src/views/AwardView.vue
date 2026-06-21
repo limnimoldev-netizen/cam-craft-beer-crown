@@ -8,7 +8,7 @@
     <section class="max-w-4xl mx-auto px-4 pt-20 pb-16 text-center relative">
         <div class="absolute inset-0 bg-radial from-amber-500/5 to-transparent blur-3xl -z-10"></div>
         <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 uppercase">
-            Competition <span class="bg-gradient-to-r from-[#c58b38] to-[#EE9F27] bg-clip-text text-transparent">Awards</span>
+            Competition <span class="bg-gradient-to-r from-[#c58b38] to-[#EE9F27] bg-clip-text text-[#EE9F27]">Awards</span>
         </h1>
         <p class="text-sm sm:text-base font-medium tracking-widest text-slate-400 uppercase mt-3">
             Three prestigious categories await our winners
