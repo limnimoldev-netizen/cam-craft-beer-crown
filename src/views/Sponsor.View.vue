@@ -1,5 +1,5 @@
 <template>
-  <section class=" px-4 py-16 md:py-20 min-h-screen bg-[#FAF9F5]">
+  <section class=" px-4 py-10 min-h-screen bg-[#FAF9F5]">
     <div class="mx-auto max-w-6xl ">
       <!-- Header -->
       <div class="text-center">

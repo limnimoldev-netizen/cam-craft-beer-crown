@@ -1,5 +1,5 @@
 <template>
-    <section class=" px-4 py-16 md:py-20 min-h-screen bg-[#FAF9F5]">
+    <section class=" px-4 py-10 min-h-screen bg-[#FAF9F5]">
   <div class="mx-auto max-w-5xl ">
   <!-- link icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
