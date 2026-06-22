@@ -33,7 +33,7 @@
             </span>
           </div>
           <!-- Sub description -->
-          <p class="text-amber-500 text-sm ml-0">{{ item.desc }}</p>
+      <p class="text-gray-900 text-sm ml-0">{{ item.desc }}</p>
         </div>
       </div>
 
