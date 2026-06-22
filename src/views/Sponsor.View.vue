@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-gray-50 px-4 py-16 md:py-20">
-    <div class="mx-auto max-w-6xl">
+  <section class="bg-gray-50 px-4 py-16 md:py-20 min-h-screen bg-gradient-to-b from-[#FAF9F6] to-[#F5F1E8]">
+    <div class="mx-auto max-w-6xl ">
       <!-- Header -->
       <div class="text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">
