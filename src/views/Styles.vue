@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 px-6 py-10">
+  <div class="min-h-screen bg-gray-50 px-24 py-10">
 
     <!-- Filter Buttons -->
     <div class="flex flex-wrap gap-3 mb-8">
@@ -17,7 +17,7 @@
     </div>
 
     <!-- Beer Cards Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
       <div
         v-for="beer in filteredBeers"
         :key="beer.id"
@@ -167,7 +167,18 @@ const beers = ref([
     expanded: false,
     description: 'A classic, deeply comforting dark lager from Bavaria that celebrates rich, bready, and toasty Munich malts. It tastes of bread crusts, nuts, or mild chocolate without ever feeling heavy, overly sweet, or roasted like a stout.',
   },
-  
+  {
+    id:8 ,
+    name: 'Blank',
+    country: 'Country Name',
+    abvLabel: 'Alcohol',
+    abv: '00',
+    ibuLabel: 'Bitterness',
+    ibu: '00',
+    bitterness: 75,
+    expanded: false,
+    description: 'for more .....',
+  },
 ])
 
 const filteredBeers = computed(() => {
