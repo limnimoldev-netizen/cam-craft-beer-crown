@@ -1,4 +1,6 @@
 <template>
+   <section class=" px-4 py-16 md:py-20 min-h-screen bg-[#FAF9F5]">
+  <div class="mx-auto max-w-5xl ">
   <div class="min-h-screen bg-gray-50 px-4 sm:px-8 lg:px-24 py-10">
 
     <!-- Filter Buttons -->
@@ -73,6 +75,9 @@
       </div>
     </div>
   </div>
+  </div>
+  </section>
+
 </template>
 
 <script setup>

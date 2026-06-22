@@ -1,5 +1,7 @@
 <template>
-  <div class="min-h-screen bg-[#FAF9F5] flex flex-col">
+  <section class=" px-4 py-16 md:py-20 min-h-screen bg-[#FAF9F5]">
+  <div class="mx-auto max-w-5xl ">
+  <div class="mx-auto max-w-5xl bg-[#FAF9F5] flex flex-col">
     
     <!-- Main Content -->
     <main class="flex-1 max-w-2xl mx-auto w-full px-6 py-12">
@@ -60,6 +62,8 @@
         
 
   </div>
+  </div>
+  </section>
 </template>
 
 <script setup>

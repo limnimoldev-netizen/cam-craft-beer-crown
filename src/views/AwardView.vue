@@ -1,11 +1,13 @@
 <template>
+    <section class=" px-4 py-16 md:py-20 min-h-screen bg-[#FAF9F5]">
+  <div class="mx-auto max-w-5xl ">
   <!-- link icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <div class="min-h-screen bg-[#FAF9F5] font-sans text-slate-800 antialiased selection:bg-amber-100">
     
     <!-- Hero Header -->
-    <section class="max-w-4xl mx-auto px-4 pt-20 pb-16 text-center relative">
+    <section class="max-w-4xl mx-auto px-4  pb-16 text-center relative">
         <div class="absolute inset-0 bg-radial from-amber-500/5 to-transparent blur-3xl -z-10"></div>
         <h1 class="text-3xl  font-black tracking-tight text-slate-900 ">
             Competition <span class="bg-gradient-to-r from-[#c58b38] to-[#EE9F27] bg-clip-text text-[#EE9F27]">Awards</span>
@@ -124,5 +126,7 @@
     </section>
     
   </div>
+    </div>
+    </section>
 </template>
 
