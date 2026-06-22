@@ -1,8 +1,8 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-[#FAF9F6] to-[#F5F1E8]">
+  <div class="min-h-screen bg-[#FAF9F5] ">
 
     <section class="relative min-h-[700px] md:min-h-[850px] flex items-center justify-center py-12 px-4 md:py-20">
-      <div class="relative z-10 w-full max-w-7xl bg-white rounded-[32px] border border-slate-100 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.04)] p-8 md:p-16 lg:p-20">        
+      <div class="relative z-10 w-full max-w-7xl bg-white rounded-[32px] border border-slate-200 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.04)] p-8 md:p-16 lg:p-20">        
         <div class="max-w-2xl">
           
           <span class="inline-flex items-center px-4 py-1.5 rounded-full border border-amber-200 bg-amber-50 text-amber-700 font-bold text-xs md:text-sm tracking-wide uppercase mb-6">
@@ -38,10 +38,14 @@
           </div>
 
           <div class="flex flex-wrap gap-4">
-              <RouterLink to="/judge" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg shadow-amber-500/20 active:scale-[0.98] transition-all duration-200">
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScEjueBWitDWygOZkaHDnkADWIHhYdgZ-lH_u3EvKM2RzL1AA/viewform" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg shadow-amber-500/20 active:scale-[0.98] transition-all duration-200">
                 <i class="fa-solid fa-check-to-slot"></i>
                 <span>Judge Here</span>
-              </RouterLink>
+              </a>
           </div>
 
         </div>

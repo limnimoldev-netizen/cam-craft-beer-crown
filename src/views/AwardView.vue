@@ -2,18 +2,18 @@
   <!-- link icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <div class="min-h-screen bg-[#faf9f5] font-sans text-slate-800 antialiased selection:bg-amber-100">
+    <div class="min-h-screen bg-[#FAF9F5] font-sans text-slate-800 antialiased selection:bg-amber-100">
     
     <!-- Hero Header -->
     <section class="max-w-4xl mx-auto px-4 pt-20 pb-16 text-center relative">
         <div class="absolute inset-0 bg-radial from-amber-500/5 to-transparent blur-3xl -z-10"></div>
-        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 uppercase">
+        <h1 class="text-3xl  font-black tracking-tight text-slate-900 ">
             Competition <span class="bg-gradient-to-r from-[#c58b38] to-[#EE9F27] bg-clip-text text-[#EE9F27]">Awards</span>
         </h1>
-        <p class="text-sm sm:text-base font-medium tracking-widest text-slate-400 uppercase mt-3">
+        <p class="text-sm text-slate-500  mt-1">
             Three prestigious categories await our winners
         </p>
-        <div class="w-52 h-[3px] bg-[#EE9F27] mx-auto mt-6"></div>
+        <div class="w-40 h-[2px] bg-[#EE9F27] mx-auto mt-4"></div>
     </section>
 
     <!-- Main Content Container -->
@@ -22,7 +22,7 @@
       <!-- Card 1: Main Award -->
         <div class="group bg-white rounded-2xl border-l-4 border-[#f0a53b] shadow-sm hover:shadow-md transition-all duration-300 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex flex-col md:flex-row items-center md:items-start gap-5 text-center md:text-left max-w-2xl">
-            <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center shrink-0 border border-amber-100 text-[#f0a53b] text-2xl">
+            <div class="w-14 h-14 bg-amber-50 rounded-4xl flex items-center justify-center shrink-0 border border-amber-100 text-[#f0a53b] text-2xl">
                 <i class="fa-solid fa-crown"></i>
             </div>
             <div>
@@ -53,7 +53,7 @@
       <!-- Card 2: People's Choice Award -->
         <div class="group bg-white rounded-2xl border-l-4 border-green-500 shadow-sm hover:shadow-md transition-all duration-300 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex flex-col md:flex-row items-center md:items-start gap-5 text-center md:text-left max-w-2xl">
-            <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center shrink-0 border border-green-100 text-green-500 text-2xl">
+            <div class="w-14 h-14 bg-green-50 rounded-4xl flex items-center justify-center shrink-0 border border-green-100 text-green-500 text-2xl">
                 <i class="fa-solid fa-users"></i>
             </div>
             <div>
@@ -82,7 +82,7 @@
       <!-- Card 3: Brewer's Choice Award -->
       <div class="group bg-white rounded-2xl border-l-4 text-amber-700 shadow-sm hover:shadow-md transition-all duration-300 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="flex flex-col md:flex-row items-center md:items-start gap-5 text-center md:text-left max-w-2xl">
-            <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center shrink-0 border border-orange-100 text-amber-700 text-2xl">
+            <div class="w-14 h-14 bg-orange-50 rounded-4xl flex items-center justify-center shrink-0 border border-orange-100 text-amber-700 text-2xl">
                 <i class="fa-solid fa-gift"></i>
             </div>
             <div>
