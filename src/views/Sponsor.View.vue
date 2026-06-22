@@ -10,7 +10,7 @@
           Sponsors at the Cambodian Craft Beer Crown 2025
         </h1>
         <p class="mx-auto mt-4 max-w-2xl text-sm text-gray-500 leading-relaxed">
-          We thank our generous sponsors who make the Cambodian Craft Beer Crown 2025 possible. And  We are proud to partner with these incredible organizations who share our passion for craft beer excellence.
+          We thank our generous sponsors who make the Cambodian Craft Beer Crown 2025 possible. And we are proud to partner with these incredible organizations who share our passion for craft beer excellence.
         </p>
         <div class="w-52 h-[3px] bg-[#EE9F27] mx-auto mt-6"></div>
       </div>
@@ -18,7 +18,7 @@
       <!-- Platinum Sponsors -->
       <div v-if="getSponsorsByTier('Platinum').length" class="mt-16">
         <div class="text-center mb-8">
-          <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-amber-400 to-amber-600 text-white text-xs font-semibold uppercase tracking-widest rounded-full">
+          <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-[#E5E4E2] to-[#A9A9A9] text-gray-700 text-xs font-semibold uppercase tracking-widest rounded-full">
             Platinum Sponsors
           </span>
         </div>
@@ -29,18 +29,18 @@
           <div
             v-for="sponsor in getSponsorsByTier('Platinum')"
             :key="sponsor.name"
-            class="group rounded-2xl border-2 border-[#C0C0C0] bg-white p-10 text-center shadow-md transition hover:shadow-xl hover:bg-gray-50 w-full max-w-sm"
+            class="group rounded-2xl border-2 border-[#C0C0C0] bg-white p-8 text-center shadow-md transition hover:shadow-xl hover:bg-gray-50 w-full max-w-sm"
           >
             <div class="mb-4 flex justify-center">
               <img 
                 v-if="sponsor.logo" 
                 :src="getImageUrl(sponsor.logo)" 
                 :alt="sponsor.name"
-                class="h-32 w-32 object-contain border-2 border-gray-200 p-3 transition group-hover:border-amber-400"
+                class="h-35 w-35 object-contain border-2 border-[#C0C0C0] p-3 transition group-hover:border-amber-400"
               />
               <div 
                 v-else
-                class="flex h-32 w-32 items-center justify-center border-2 border-gray-200 bg-amber-50 text-4xl font-bold text-amber-700 transition group-hover:border-amber-400 group-hover:bg-amber-100"
+                class="flex h-35 w-35 items-center justify-center border-2 border-[#C0C0C0] bg-gray-50 text-4xl font-bold text-[#8C8C8C] transition group-hover:border-amber-400 group-hover:bg-gray-100"
               >
                 {{ getInitials(sponsor.name) }}
               </div>
@@ -56,7 +56,7 @@
       <!-- Gold Sponsors -->
       <div v-if="getSponsorsByTier('Gold').length" class="mt-16">
         <div class="text-center mb-8">
-          <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white text-xs font-semibold uppercase tracking-widest rounded-full">
+          <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-[#FFD700] to-[#D4A017] text-white text-xs font-semibold uppercase tracking-widest rounded-full">
             Gold Sponsors
           </span>
         </div>
@@ -67,18 +67,18 @@
           <div
             v-for="sponsor in getSponsorsByTier('Gold')"
             :key="sponsor.name"
-            class="group rounded-2xl border border-[#C9A84C] bg-white p-8 text-center shadow-sm transition hover:shadow-md hover:bg-gray-50 w-full max-w-xs"
+            class="group rounded-2xl border-2 border-[#FFD700] bg-white p-6 text-center shadow-sm transition hover:shadow-md hover:bg-gray-50 w-full max-w-xs"
           >
             <div class="mb-4 flex justify-center">
               <img 
                 v-if="sponsor.logo" 
                 :src="getImageUrl(sponsor.logo)" 
                 :alt="sponsor.name"
-                class="h-32 w-32 object-contain border-2 border-gray-200 p-2 transition group-hover:border-amber-400"
+                class="h-35 w-35 object-contain border-2 border-[#FFD700] p-2 transition group-hover:border-amber-400"
               />
               <div 
                 v-else
-                class="flex h-32 w-32 items-center justify-center border-2 border-gray-200 bg-amber-50 text-4xl font-bold text-amber-700 transition group-hover:border-amber-400 group-hover:bg-amber-100"
+                class="flex h-35 w-35 items-center justify-center border-2 border-[#FFD700] bg-amber-50 text-4xl font-bold text-[#D4A017] transition group-hover:border-amber-400 group-hover:bg-amber-100"
               >
                 {{ getInitials(sponsor.name) }}
               </div>
@@ -94,7 +94,7 @@
       <!-- Silver Sponsors -->
       <div v-if="getSponsorsByTier('Silver').length" class="mt-16">
         <div class="text-center mb-8">
-          <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-gray-400 to-gray-500 text-white text-xs font-semibold uppercase tracking-widest rounded-full">
+          <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-[#E8E8E8] to-[#A0A0A0] text-gray-700 text-xs font-semibold uppercase tracking-widest rounded-full">
             Silver Sponsors
           </span>
         </div>
@@ -105,18 +105,18 @@
           <div
             v-for="sponsor in getSponsorsByTier('Silver')"
             :key="sponsor.name"
-            class="group rounded-2xl border border-[#E8E8E8] bg-white p-8 text-center shadow-sm transition hover:shadow-md hover:bg-gray-50 w-full max-w-xs"
+            class="group rounded-2xl border-2 border-[#C0C0C0] bg-white p-6 text-center shadow-sm transition hover:shadow-md hover:bg-gray-50 w-full max-w-xs"
           >
             <div class="mb-4 flex justify-center">
               <img 
                 v-if="sponsor.logo" 
                 :src="getImageUrl(sponsor.logo)" 
                 :alt="sponsor.name"
-                class="h-32 w-32 object-contain border-2 border-gray-200 p-2 transition group-hover:border-amber-400"
+                class="h-35 w-35 object-contain border-2 border-[#C0C0C0] p-2 transition group-hover:border-amber-400"
               />
               <div 
                 v-else
-                class="flex h-32 w-32 items-center justify-center border-2 border-gray-200 bg-amber-50 text-4xl font-bold text-amber-700 transition group-hover:border-amber-400 group-hover:bg-amber-100"
+                class="flex h-35 w-35 items-center justify-center border-2 border-[#C0C0C0] bg-gray-50 text-4xl font-bold text-[#8C8C8C] transition group-hover:border-amber-400 group-hover:bg-gray-100"
               >
                 {{ getInitials(sponsor.name) }}
               </div>
@@ -132,7 +132,7 @@
       <!-- Bronze Sponsors -->
       <div v-if="getSponsorsByTier('Bronze').length" class="mt-16">
         <div class="text-center mb-8">
-          <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-amber-600 to-amber-800 text-white text-xs font-semibold uppercase tracking-widest rounded-full">
+          <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-[#CD7F32] to-[#A97142] text-white text-xs font-semibold uppercase tracking-widest rounded-full">
             Bronze Sponsors
           </span>
         </div>
@@ -143,18 +143,18 @@
           <div
             v-for="sponsor in getSponsorsByTier('Bronze')"
             :key="sponsor.name"
-            class="group rounded-2xl border border-[#CD7F32] bg-white p-6 text-center shadow-sm transition hover:shadow-md hover:bg-gray-50 w-full max-w-xs"
+            class="group rounded-2xl border-2 border-[#CD7F32] bg-white p-5 text-center shadow-sm transition hover:shadow-md hover:bg-gray-50 w-full max-w-xs"
           >
             <div class="mb-4 flex justify-center">
               <img 
                 v-if="sponsor.logo" 
                 :src="getImageUrl(sponsor.logo)" 
                 :alt="sponsor.name"
-                class="h-32 w-32 object-contain border-2 border-gray-200 p-2 transition group-hover:border-amber-400"
+                class="h-35 w-35 object-contain border-2 border-[#CD7F32] p-2 transition group-hover:border-amber-400"
               />
               <div 
                 v-else
-                class="flex h-32 w-32 items-center justify-center border-2 border-gray-200 bg-amber-50 text-4xl font-bold text-amber-700 transition group-hover:border-amber-400 group-hover:bg-amber-100"
+                class="flex h-35 w-35 items-center justify-center border-2 border-[#CD7F32] bg-amber-50 text-4xl font-bold text-[#CD7F32] transition group-hover:border-amber-400 group-hover:bg-amber-100"
               >
                 {{ getInitials(sponsor.name) }}
               </div>
@@ -181,18 +181,18 @@
           <div
             v-for="sponsor in getSponsorsByTier('Partner')"
             :key="sponsor.name"
-            class="group rounded-xl border border-gray-200 bg-white p-6 text-center shadow-sm transition hover:shadow-md hover:bg-gray-50 w-full max-w-xs"
+            class="group rounded-xl border-2 border-gray-300 bg-white p-4 text-center shadow-sm transition hover:shadow-md hover:bg-gray-50 w-full max-w-xs"
           >
             <div class="mb-3 flex justify-center">
               <img 
                 v-if="sponsor.logo" 
                 :src="getImageUrl(sponsor.logo)" 
                 :alt="sponsor.name"
-                class="h-32 w-32 object-contain border border-gray-200 p-1.5 transition group-hover:border-amber-400"
+                class="h-35 w-35 object-contain border-2 border-gray-300 p-1.5 transition group-hover:border-amber-400"
               />
               <div 
                 v-else
-                class="flex h-32 w-32 items-center justify-center border border-gray-200 bg-amber-50 text-4xl font-bold text-amber-700 transition group-hover:border-amber-400 group-hover:bg-amber-100"
+                class="flex h-35 w-35 items-center justify-center border-2 border-gray-300 bg-amber-50 text-4xl font-bold text-amber-700 transition group-hover:border-amber-400 group-hover:bg-amber-100"
               >
                 {{ getInitials(sponsor.name) }}
               </div>
@@ -230,13 +230,13 @@ const sponsors = [
     name: 'BERTIE',
     logo: 'BertiePNHlogo-3.webp',
     role: 'Official event partner.',
-    tier: 'Platinum'
+    tier: 'Gold'
   },
   {
     name: 'BOTANICO',
     logo: 'botanico-spnsor.webp',
     role: 'Brewing Company',
-    tier: 'Platinum'
+    tier: 'Silver'
   },
   // Gold Sponsors (3 sponsors)
   {
@@ -268,7 +268,7 @@ const sponsors = [
     name: 'Bash Brewing',
     logo: 'Bash Brewing.png',
     role: 'Craft beer distributor.',
-    tier: 'Silver'
+    tier: 'Platinum'
   },
   // Bronze Sponsors (3 sponsors)
   {
@@ -324,7 +324,7 @@ const sponsors = [
     name: 'Himawari Microbrewery',
     logo: 'Himawari Microbrewery.png',
     role: 'Microbrewery partner.',
-    tier: 'Partner'
+    tier: 'Platinum'
   },
   {
     name: 'Jayavara',
@@ -347,8 +347,6 @@ const getSponsorsByTier = (tier) => {
 
 // Helper function to get grid class based on number of items
 const getGridClass = (count, tier) => {
-  // For mobile: always 1 column
-  // For different tiers, adjust columns based on count
   if (tier === 'platinum') {
     if (count <= 2) return 'grid-cols-1 md:grid-cols-2'
     if (count <= 3) return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
@@ -390,5 +388,13 @@ const getInitials = (name) => {
 
 .group:hover {
   transform: translateY(-3px);
+}
+
+/* Custom 35x35 size class */
+.h-35 {
+  height: 140px;
+}
+.w-35 {
+  width: 140px;
 }
 </style>

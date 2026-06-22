@@ -13,7 +13,7 @@
           These craft breweries are bringing their finest European-style beers to the competition.
           Visit each one, taste their entry, and decide your champion.
         </p>
-        <div class="mx-auto mt-6 h-0.5 w-100 bg-amber-500 rounded-full"></div>
+        <div class="w-52 h-[3px] bg-[#EE9F27] mx-auto mt-6"></div>
       </div>
 
       <!-- Brewery Grid -->
