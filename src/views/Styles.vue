@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 px-24 py-10">
+  <div class="min-h-screen bg-[FAF9F5] px-24 py-10">
 
     <!-- Filter Buttons -->
     <div class="flex flex-wrap gap-3 mb-8">

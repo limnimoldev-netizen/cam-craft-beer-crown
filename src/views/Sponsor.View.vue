@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-50 px-4 py-16 md:py-20 min-h-screen bg-gradient-to-b from-[#FAF9F6] to-[#F5F1E8]">
+  <section class="bg-gray-50 px-4 py-16 md:py-20 min-h-screen bg-[FAF9F5]">
     <div class="mx-auto max-w-6xl ">
       <!-- Header -->
       <div class="text-center">
@@ -7,12 +7,12 @@
           OUR SPONSORS
         </p>
         <h1 class="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-          Sponsors at the Cambodian Craft Beer Crown 2025
+          <span class="text-[#EE9F27]">Sponsors </span>at the Cambodian Craft Beer Crown 2026
         </h1>
-        <p class="mx-auto mt-4 max-w-2xl text-sm text-gray-500 leading-relaxed">
+        <p class="mx-auto mt-2 max-w-2xl text-sm text-gray-500 leading-relaxed">
           We thank our generous sponsors who make the Cambodian Craft Beer Crown 2025 possible. And we are proud to partner with these incredible organizations who share our passion for craft beer excellence.
         </p>
-        <div class="w-52 h-[3px] bg-[#EE9F27] mx-auto mt-6"></div>
+        <div class="w-40 h-[3px] bg-[#EE9F27] mx-auto mt-4"></div>
       </div>
 
       <!-- Platinum Sponsors -->

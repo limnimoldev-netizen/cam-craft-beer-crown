@@ -1,12 +1,12 @@
 <template>
-  <div class="min-h-screen bg-gray-100 flex flex-col">
+  <div class="min-h-screen bg-[FAF9F5] flex flex-col">
     
     <!-- Main Content -->
     <main class="flex-1 max-w-2xl mx-auto w-full px-6 py-12">
       
       <!-- Header -->
       <p class="text-amber-500 font-medium mb-2">Event Day</p>
-      <h1 class="text-5xl font-black text-gray-900 mb-3">Schedule</h1>
+      <h1 class="text-3xl font-black text-gray-900 mb-3">Schedule</h1>
       <div class="w-24 h-1 bg-amber-500 mb-6"></div>
       
       <!-- Description -->
