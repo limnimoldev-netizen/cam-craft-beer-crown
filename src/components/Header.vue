@@ -95,9 +95,15 @@ const toggleMenu = () => {
 
         <hr class="border-gray-100 my-1" />
 
-        <RouterLink @click="isMenuOpen = false" to="/judge" class="w-full justify-center inline-flex items-center bg-[#d48806] hover:bg-[#b57305] text-white px-6 py-3 rounded-xl font-bold transition-all text-center gap-2">           
-          <i class="fa-solid fa-check-to-slot"></i> Judge here
-        </RouterLink>
+        <a 
+          href="https://docs.google.com/forms/d/e/1FAIpQLScEjueBWitDWygOZkaHDnkADWIHhYdgZ-lH_u3EvKM2RzL1AA/viewform" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full justify-center inline-flex items-center bg-[#d48806] hover:bg-[#b57305] text-white px-6 py-3 rounded-xl font-bold transition-all text-center gap-2">
+          <i class="fa-solid fa-check-to-slot"></i>
+          <span>Judge Here</span>
+        </a>
+
       </div>
     </div>
   </header>
