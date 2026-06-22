@@ -36,11 +36,11 @@
                 v-if="sponsor.logo" 
                 :src="getImageUrl(sponsor.logo)" 
                 :alt="sponsor.name"
-                class="h-35 w-35 object-contain border-2 border-[#C0C0C0] p-3 transition group-hover:border-amber-400"
+                class="h-36 w-36 object-contain border-2 border-[#C0C0C0] p-3 transition group-hover:border-amber-400"
               />
               <div 
                 v-else
-                class="flex h-35 w-35 items-center justify-center border-2 border-[#C0C0C0] bg-gray-50 text-4xl font-bold text-[#8C8C8C] transition group-hover:border-amber-400 group-hover:bg-gray-100"
+                class="flex h-36 w-36 items-center justify-center border-2 border-[#C0C0C0] bg-gray-50 text-4xl font-bold text-[#8C8C8C] transition group-hover:border-amber-400 group-hover:bg-gray-100"
               >
                 {{ getInitials(sponsor.name) }}
               </div>
@@ -74,11 +74,11 @@
                 v-if="sponsor.logo" 
                 :src="getImageUrl(sponsor.logo)" 
                 :alt="sponsor.name"
-                class="h-35 w-35 object-contain border-2 border-[#FFD700] p-2 transition group-hover:border-amber-400"
+                class="h-30 w-30 object-contain border-2 border-[#FFD700] p-2 transition group-hover:border-amber-400"
               />
               <div 
                 v-else
-                class="flex h-35 w-35 items-center justify-center border-2 border-[#FFD700] bg-amber-50 text-4xl font-bold text-[#D4A017] transition group-hover:border-amber-400 group-hover:bg-amber-100"
+                class="flex h-30 w-30 items-center justify-center border-2 border-[#FFD700] bg-amber-50 text-4xl font-bold text-[#D4A017] transition group-hover:border-amber-400 group-hover:bg-amber-100"
               >
                 {{ getInitials(sponsor.name) }}
               </div>
@@ -112,11 +112,11 @@
                 v-if="sponsor.logo" 
                 :src="getImageUrl(sponsor.logo)" 
                 :alt="sponsor.name"
-                class="h-35 w-35 object-contain border-2 border-[#C0C0C0] p-2 transition group-hover:border-amber-400"
+                class="h-25 w-25 object-contain border-2 border-[#C0C0C0] p-2 transition group-hover:border-amber-400"
               />
               <div 
                 v-else
-                class="flex h-35 w-35 items-center justify-center border-2 border-[#C0C0C0] bg-gray-50 text-4xl font-bold text-[#8C8C8C] transition group-hover:border-amber-400 group-hover:bg-gray-100"
+                class="flex h-25 w-25 items-center justify-center border-2 border-[#C0C0C0] bg-gray-50 text-4xl font-bold text-[#8C8C8C] transition group-hover:border-amber-400 group-hover:bg-gray-100"
               >
                 {{ getInitials(sponsor.name) }}
               </div>
@@ -150,11 +150,11 @@
                 v-if="sponsor.logo" 
                 :src="getImageUrl(sponsor.logo)" 
                 :alt="sponsor.name"
-                class="h-35 w-35 object-contain border-2 border-[#CD7F32] p-2 transition group-hover:border-amber-400"
+                class="h-20 w-20 object-contain border-2 border-[#CD7F32] p-2 transition group-hover:border-amber-400"
               />
               <div 
                 v-else
-                class="flex h-35 w-35 items-center justify-center border-2 border-[#CD7F32] bg-amber-50 text-4xl font-bold text-[#CD7F32] transition group-hover:border-amber-400 group-hover:bg-amber-100"
+                class="flex h-20 w-20 items-center justify-center border-2 border-[#CD7F32] bg-amber-50 text-4xl font-bold text-[#CD7F32] transition group-hover:border-amber-400 group-hover:bg-amber-100"
               >
                 {{ getInitials(sponsor.name) }}
               </div>
@@ -188,11 +188,11 @@
                 v-if="sponsor.logo" 
                 :src="getImageUrl(sponsor.logo)" 
                 :alt="sponsor.name"
-                class="h-35 w-35 object-contain border-2 border-gray-300 p-1.5 transition group-hover:border-amber-400"
+                class="h-16 w-16 object-contain border-2 border-gray-300 p-1.5 transition group-hover:border-amber-400"
               />
               <div 
                 v-else
-                class="flex h-35 w-35 items-center justify-center border-2 border-gray-300 bg-amber-50 text-4xl font-bold text-amber-700 transition group-hover:border-amber-400 group-hover:bg-amber-100"
+                class="flex h-16 w-16 items-center justify-center border-2 border-gray-300 bg-amber-50 text-4xl font-bold text-amber-700 transition group-hover:border-amber-400 group-hover:bg-amber-100"
               >
                 {{ getInitials(sponsor.name) }}
               </div>
@@ -255,7 +255,7 @@ const sponsors = [
     name: 'THAI TAN',
     logo: 'CopyofLogoThaiTaneng1.webp',
     role: 'Community supporter.',
-    tier: 'Gold'
+    tier: 'Partner'
   },
   // Silver Sponsors (2 sponsors)
   {
