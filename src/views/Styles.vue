@@ -1,14 +1,14 @@
 <template>
-  <div class="min-h-screen bg-gray-50 px-24 py-10">
+  <div class="min-h-screen bg-gray-50 px-4 sm:px-8 lg:px-24 py-10">
 
     <!-- Filter Buttons -->
-    <div class="flex flex-wrap gap-3 mb-8">
+    <div class="flex flex-wrap gap-2 mb-8">
       <button
         v-for="filter in filters"
         :key="filter"
         @click="activeFilter = filter"
         :class="[
-          'px-6 py-2 rounded-full font-semibold text-white transition',
+          'px-4 py-1.5 rounded-full font-semibold text-white text-sm transition',
           activeFilter === filter ? 'bg-amber-500' : 'bg-amber-400 hover:bg-amber-500'
         ]"
       >
@@ -17,35 +17,35 @@
     </div>
 
     <!-- Beer Cards Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <div
         v-for="beer in filteredBeers"
         :key="beer.id"
-        class="bg-white rounded-2xl shadow-md p-5 relative"
+        class="bg-white rounded-2xl shadow-md p-4"
       >
-        <!-- Country Badge -->
-        <span class="absolute top-4 right-4 bg-amber-400 text-white text-sm font-semibold px-4 py-1 rounded-full">
-          {{ beer.country }}
-        </span>
-
-        <!-- Beer Name -->
-        <h2 class="text-xl font-bold text-gray-900 mb-4">{{ beer.name }}</h2>
+        <!-- Beer Name + Country Badge -->
+        <div class="flex items-start justify-between gap-2 mb-4">
+          <h2 class="text-base font-bold text-gray-900 leading-snug">{{ beer.name }}</h2>
+          <span class="bg-amber-400 text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap flex-shrink-0">
+            {{ beer.country }}
+          </span>
+        </div>
 
         <!-- Stats -->
-        <div class="flex gap-4 mb-4">
-          <div class="flex-1 bg-gray-100 rounded-xl p-3 text-center">
-            <p class="text-sm text-gray-500">{{ beer.abvLabel }}</p>
-            <p class="text-base font-semibold text-gray-800 mt-1">{{ beer.abv }}</p>
+        <div class="flex gap-3 mb-4">
+          <div class="flex-1 bg-gray-100 rounded-xl p-2.5 text-center">
+            <p class="text-xs text-gray-500">{{ beer.abvLabel }}</p>
+            <p class="text-sm font-semibold text-gray-800 mt-1">{{ beer.abv }}</p>
           </div>
-          <div class="flex-1 bg-gray-100 rounded-xl p-3 text-center">
-            <p class="text-sm text-gray-500">{{ beer.ibuLabel }}</p>
-            <p class="text-base font-semibold text-gray-800 mt-1">{{ beer.ibu }}</p>
+          <div class="flex-1 bg-gray-100 rounded-xl p-2.5 text-center">
+            <p class="text-xs text-gray-500">{{ beer.ibuLabel }}</p>
+            <p class="text-sm font-semibold text-gray-800 mt-1">{{ beer.ibu }}</p>
           </div>
         </div>
 
         <!-- Bitterness Bar -->
         <div class="mb-4">
-          <p class="text-sm text-gray-600 mb-1">Bitterness Level</p>
+          <p class="text-xs text-gray-600 mb-1">Bitterness Level</p>
           <div class="w-full bg-gray-200 rounded-full h-2">
             <div
               class="bg-amber-400 h-2 rounded-full transition-all duration-500"
@@ -58,14 +58,14 @@
         <div>
           <button
             @click="beer.expanded = !beer.expanded"
-            class="flex items-center gap-1 text-sm text-gray-500 hover:text-amber-500 transition w-full justify-end"
+            class="flex items-center gap-1 text-xs text-gray-500 hover:text-amber-500 transition w-full justify-end"
           >
             <span>{{ beer.expanded ? '▲' : '▼' }}</span>
             <span>tap for description</span>
           </button>
 
           <!-- Description -->
-          <p v-if="beer.expanded" class="text-sm text-gray-600 mt-2 leading-relaxed">
+          <p v-if="beer.expanded" class="text-xs text-gray-600 mt-2 leading-relaxed">
             {{ beer.description }}
           </p>
         </div>
@@ -131,7 +131,7 @@ const beers = ref([
     expanded: false,
     description: 'An artisanal, highly carbonated Belgian farmhouse ale with a distinctive dry, fruity, and peppery character. It balances complex esters and phenols with a prominent hop bitterness and an incredibly crisp finish.',
   },
-   {
+  {
     id: 5,
     name: 'Weissibier',
     country: 'Germany',
@@ -144,7 +144,7 @@ const beers = ref([
     description: 'A traditional South German wheat beer famous for its cloudy appearance and dramatic yeast-driven aromas of banana and clove. It has low bitterness, high carbonation, and a fluffy, creamy mouthfeel.',
   },
   {
-    id:6 ,
+    id: 6,
     name: 'German Pils',
     country: 'Germany',
     abvLabel: 'Alcohol',
@@ -155,8 +155,8 @@ const beers = ref([
     expanded: false,
     description: 'A crisp, clean, and highly attenuated gold-colored lager that highlights noble German hops like Hallertau or Tettnanger. It features a distinctive, snappy floral aroma and a firm, lingering bitterness.',
   },
-   {
-    id:7 ,
+  {
+    id: 7,
     name: 'Munich Dunkel',
     country: 'Germany',
     abvLabel: 'Alcohol',
@@ -168,7 +168,7 @@ const beers = ref([
     description: 'A classic, deeply comforting dark lager from Bavaria that celebrates rich, bready, and toasty Munich malts. It tastes of bread crusts, nuts, or mild chocolate without ever feeling heavy, overly sweet, or roasted like a stout.',
   },
   {
-    id:8 ,
+    id: 8,
     name: 'Blank',
     country: 'Country Name',
     abvLabel: 'Alcohol',
