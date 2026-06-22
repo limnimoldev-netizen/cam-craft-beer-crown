@@ -65,7 +65,7 @@ const toggleMenu = () => {
 
     <div v-if="isMenuOpen" class="md:hidden border-t border-gray-100 bg-white shadow-xl transition-all duration-300 ease-in-out">
       <div class="px-6 py-6 flex flex-col gap-5 font-medium text-lg">
-        <RouterLink @click="isMenuOpen = false" to="/home" class="flex items-center gap-3 text-gray-800 py-1" active-class="text-[#f0a22a] font-bold">
+        <RouterLink @click="isMenuOpen = false" to="/" class="flex items-center gap-3 text-gray-800 py-1" active-class="text-[#f0a22a] font-bold">
           <i class="fa-regular fa-house w-5 text-center"></i> Home
         </RouterLink>
 
