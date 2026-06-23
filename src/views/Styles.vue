@@ -1,10 +1,10 @@
 <template>
-  <section class="px-4 min-h-screen bg-[#FAF9F5]">
+  <section class="px-2 min-h-screen bg-[#FAF9F5]">
     <div class="mx-auto max-w-5xl">
-      <div class="min-h-screen bg-gray-50 px-4 sm:px-8 lg:px-24 py-9">
+      <div class="min-h-screen bg-gray-50 px-4 sm:px-8 lg:px-24 py-6">
 
         <!-- Header -->
-        <div class="text-center mb-8">
+        <div class="text-center mb-6">
           <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl animate-fade-in-up">
             Beer <span class="text-[#EE9F27]">Styles</span>
           </h1>

@@ -1,5 +1,5 @@
 <template>
-  <section class="relative px-4 min-h-screen bg-[#FAF9F5]  md:py-10">
+  <section class="relative px-4 min-h-screen bg-[#FAF9F5] py-6 md:py-10">
     <div class="mx-auto max-w-5xl">
 
       <section class="relative flex items-center justify-center px-5 mb-4 md:mb-6">
@@ -69,7 +69,7 @@
 
       <section class="max-w-7xl mx-auto px-2 mb-12">
         <div class="text-center mb-6">
-          <h2 class=" text-3xl font-black text-[#0f172a] animate-fade-in-up">How Judging Works</h2>
+          <h2 class=" mt-3 text-3xl font-bold text-gray-900 sm:text-4xl animate-fade-in-up">How Judging Works</h2>
           <p class="text-slate-500 mt-1 text-sm md:text-base animate-fade-in-up" style="animation-delay: 0.1s;">Three simple steps to crown the champion brewery.</p>
         </div>
 
@@ -112,7 +112,7 @@
         <div class="bg-white rounded-[32px] p-8 md:p-14 border border-slate-50 shadow-sm animate-fade-in-up" style="animation-delay: 0.1s;">
           <div class="text-center max-w-3xl mx-auto">
             <span class="text-amber-600 font-extrabold uppercase tracking-widest text-base">About The Event</span>
-            <h2 class="text-3xl font-black mt-3 mb-6 text-slate-900">Celebrating Cambodia's Craft Beer Culture</h2>
+            <h2 class="mt-3 text-3xl font-bold text-gray-900 ">Celebrating Cambodia's Craft Beer Culture</h2>
             <p class="text-slate-600 text-base md:text-lg leading-relaxed">
               The Cambodian Craft Beer Crown 2026 brings together the nation's most passionate brewers for a celebration of craftsmanship, innovation, and community.
             </p>
@@ -123,12 +123,12 @@
         </div>
       </section>
 
-      <section class="max-w-7xl mx-auto px-5 pb-10">
+      <section class="max-w-7xl mx-auto px-5 pb-4">
         <div class="text-center mb-10">
           <span class="inline-flex items-center gap-2 text-amber-600 font-extrabold uppercase tracking-[3px] text-base animate-fade-in-up">
             Event Navigation
           </span>
-          <h2 class="text-3xl  font-black text-slate-900 animate-fade-in-up" style="animation-delay: 0.1s;">Explore The Event</h2>
+          <h2 class="mt-3 text-3xl font-bold text-gray-900 animate-fade-in-up" style="animation-delay: 0.1s;">Explore The Event</h2>
           <p class="max-w-2xl mx-auto text-slate-500 mt-3 text-sm md:text-base animate-fade-in-up" style="animation-delay: 0.2s;">
             Discover breweries, awards, schedules, sponsors and everything you need to enjoy Cambodia's premier craft beer celebration.
           </p>

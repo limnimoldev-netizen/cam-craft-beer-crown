@@ -1,12 +1,12 @@
 <template>
-  <section class="px-4 py-8 min-h-screen bg-[#FAF9F5]">
+  <section class="px-4 py-7 min-h-screen bg-[#FAF9F5]">
     <div class="mx-auto max-w-6xl">
       <!-- Header with Animation -->
       <div class="text-center animate-fade-in-down">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">
           OUR SPONSORS
         </p>
-        <h1 class="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
+        <h1 class=" text-3xl font-bold text-gray-900 sm:text-4xl">
           <span class="text-[#EE9F27]">Sponsors </span>at the Cambodian Craft Beer Crown 2026
         </h1>
         <p class="mx-auto mt-2 max-w-2xl text-sm text-gray-500 leading-relaxed">

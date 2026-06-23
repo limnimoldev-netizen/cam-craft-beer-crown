@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 py-9 min-h-screen bg-[#FAF9F5]">
+  <section class="px-4 py-6 min-h-screen bg-[#FAF9F5]">
     <div class="mx-auto max-w-5xl">
       
       <!-- Header with Animation -->

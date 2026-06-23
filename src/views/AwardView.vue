@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 py-4 min-h-screen bg-[#FAF9F5]">
+  <section class="px-4 py-3 min-h-screen bg-[#FAF9F5]">
     <div class="mx-auto max-w-5xl">
       <!-- link icon -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -19,7 +19,7 @@
         </section>
 
         <!-- Main Content Container -->
-        <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-6">
+        <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-2 space-y-6">
           
           <!-- Card 1: Main Award -->
           <div class="group bg-white rounded-2xl border-l-4 border-[#f0a53b] shadow-sm hover:shadow-md transition-all duration-300 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 animate-fade-in-up" style="animation-delay: 0.3s;">
