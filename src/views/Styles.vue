@@ -1,17 +1,16 @@
 <template>
-  <section class="px-2 min-h-screen bg-[#FAF9F5]">
+  <section class="px-4 py-6 min-h-screen bg-[#FAF9F5]">
     <div class="mx-auto max-w-5xl">
-      <div class="min-h-screen bg-gray-50 px-4 sm:px-8 lg:px-24 py-6">
 
         <!-- Header -->
-        <div class="text-center mb-6">
-          <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl animate-fade-in-up">
-            Beer <span class="text-[#EE9F27]">Styles</span>
-          </h1>
-          <p class="text-sm text-slate-500 mt-1 animate-fade-in-up" style="animation-delay: 0.1s;">
+        <div class="text-center mb-10">
+          <span class="inline-flex items-center gap-2 text-amber-600 font-extrabold uppercase tracking-[3px] text-base animate-fade-in-up">
+            Beer Categories
+          </span>
+          <h1 class="text-3xl font-bold text-gray-900 animate-fade-in-up" style="animation-delay: 0.1s;">Beer Styles</h1>
+          <p class="max-w-2xl mx-auto text-slate-500 mt-3 text-sm md:text-base animate-fade-in-up" style="animation-delay: 0.2s;">
             Explore the different beer styles in the competition
           </p>
-          <div class="w-40 h-[2px] bg-[#EE9F27] mx-auto mt-3 animate-scale-x" style="animation-delay: 0.2s;"></div>
         </div>
 
         <!-- Filter Buttons -->
@@ -86,7 +85,6 @@
 
           </div>
         </div>
-      </div>
     </div>
   </section>
 </template>
@@ -204,11 +202,11 @@ const filteredBeers = computed(() => {
 </script>
 
 <style scoped>
-/* Simple Animations */
+/* Professional Fade In Up Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -216,6 +214,31 @@ const filteredBeers = computed(() => {
   }
 }
 
+/* Professional Fade In Down Animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Professional Scale In Animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scale X Animation */
 @keyframes scaleX {
   from {
     transform: scaleX(0);
@@ -225,13 +248,230 @@ const filteredBeers = computed(() => {
   }
 }
 
+/* Slide In From Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Bitterness Bar Animation */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--target-width);
+  }
+}
+
+/* Flip Animation for Card */
+@keyframes flipIn {
+  from {
+    opacity: 0;
+    transform: perspective(1000px) rotateY(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1000px) rotateY(0deg);
+  }
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Elastic Bounce */
+@keyframes elasticBounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .animate-fade-in-up {
   opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in-down {
+  opacity: 0;
+  animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  animation: scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-scale-x {
-  animation: scaleX 0.6s ease-out forwards;
+  animation: scaleX 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   transform-origin: center;
 }
+
+.animate-slide-left {
+  opacity: 0;
+  animation: slideInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-flip-in {
+  opacity: 0;
+  animation: flipIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-elastic {
+  animation: elasticBounce 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Beer Card Hover Effects */
+.bg-white {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
+}
+
+.bg-white:hover {
+  transform: translateY(-12px) rotateX(5deg);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
+}
+
+/* Filter Button Hover */
+button {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 25px -5px rgba(238, 159, 39, 0.5);
+  animation: elasticBounce 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* Bitterness Bar Hover */
+.bg-amber-400 {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bg-amber-400:hover {
+  filter: brightness(1.15);
+  transform: scaleY(1.1);
+}
+
+/* Stats Box Hover */
+.bg-gray-100 {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bg-gray-100:hover {
+  background-color: #f3f4f6;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Country Badge Hover */
+.bg-amber-400 {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bg-amber-400:hover {
+  transform: scale(1.08) rotate(2deg);
+}
+
+/* Description Expand Animation */
+.text-xs {
+  transition: all 0.3s ease;
+}
+
+/* Card Title Hover */
+.bg-white:hover h2 {
+  color: #d97706;
+  transition: color 0.3s ease;
+}
+
+/* Staggered Animation Delays */
+.bg-white:nth-child(1) { animation-delay: 0.1s; }
+.bg-white:nth-child(2) { animation-delay: 0.2s; }
+.bg-white:nth-child(3) { animation-delay: 0.3s; }
+.bg-white:nth-child(4) { animation-delay: 0.4s; }
+.bg-white:nth-child(5) { animation-delay: 0.5s; }
+.bg-white:nth-child(6) { animation-delay: 0.6s; }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .bg-white:hover,
+  .bg-white:active {
+    transform: translateY(-6px);
+  }
+  
+  button:hover,
+  button:active {
+    transform: translateY(-2px) scale(1.02);
+  }
+  
+  .bg-amber-400:hover,
+  .bg-amber-400:active {
+    transform: scale(1.02);
+  }
+  
+  .bg-gray-100:hover,
+  .bg-gray-100:active {
+    transform: scale(1.02);
+  }
+  
+  /* Touch feedback for mobile */
+  .bg-white,
+  button {
+    -webkit-tap-highlight-color: rgba(238, 159, 39, 0.2);
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 </style>

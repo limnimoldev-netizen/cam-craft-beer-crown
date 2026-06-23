@@ -3,18 +3,17 @@
     <div class="mx-auto max-w-5xl">
       
       <!-- Header with Animation -->
-      <div class="text-center">
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 animate-fade-in-up">
-          CAMBODIAN <span class="text-[#EE9F27]">BREWERIES</span>
-        </p>
-        <h1 class="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl animate-fade-in-up" style="animation-delay: 0.1s;">
-          Breweries at the Cambodian Craft Beer Crown 2025
+      <div class="text-center mb-10">
+        <span class="inline-flex items-center gap-2 text-amber-600 font-extrabold uppercase tracking-[3px] text-base animate-fade-in-up">
+          Participating Breweries
+        </span>
+        <h1 class=" text-3xl font-bold text-gray-900 sm:text-4xl animate-fade-in-up" style="animation-delay: 0.1s;">
+          Breweries
         </h1>
-        <p class="mx-auto mt-4 max-w-2xl text-sm text-gray-500 leading-relaxed animate-fade-in-up" style="animation-delay: 0.2s;">
+        <p class="max-w-2xl mx-auto text-slate-500 mt-3 text-sm md:text-base animate-fade-in-up" style="animation-delay: 0.2s;">
           These craft breweries are bringing their finest European-style beers to the competition.
           Visit each one, taste their entry, and decide your champion.
         </p>
-        <div class="w-40 h-[2px] bg-[#EE9F27] mx-auto mt-4 animate-scale-x" style="animation-delay: 0.3s;"></div>
       </div>
 
       <!-- Brewery Grid -->
@@ -156,18 +155,20 @@ const getImageUrl = (filename) => {
 
 <style scoped>
 .brew-card {
-  transition: all 0.15s ease;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
 }
 .brew-card:hover {
   background-color: #faf9f6;
-  transform: translateY(-2px);
+  transform: translateY(-12px) rotateX(5deg);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
 }
 
-/* Simple Animations */
+/* Professional Fade In Up Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -175,6 +176,31 @@ const getImageUrl = (filename) => {
   }
 }
 
+/* Professional Fade In Down Animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Professional Scale In Animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scale X Animation */
 @keyframes scaleX {
   from {
     transform: scaleX(0);
@@ -184,22 +210,158 @@ const getImageUrl = (filename) => {
   }
 }
 
+/* Rotate In Animation */
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-10deg) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Elastic Bounce */
+@keyframes elasticBounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .animate-fade-in-up {
   opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in-down {
+  opacity: 0;
+  animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  animation: scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-scale-x {
-  animation: scaleX 0.6s ease-out forwards;
+  animation: scaleX 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   transform-origin: center;
 }
 
-/* Hover effect for logo border */
-.brew-card img {
-  transition: border-color 0.3s ease;
+.animate-rotate-in {
+  opacity: 0;
+  animation: rotateIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.brew-card:hover img {
-  border-color: #EE9F27;
+.animate-float {
+  animation: float 4s ease-in-out infinite;
 }
+
+.animate-elastic {
+  animation: elasticBounce 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Logo Container Hover Effect */
+.brew-card .h-30 {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.brew-card:hover .h-30 {
+  transform: scale(1.1) rotate(5deg);
+  border-color: #EE9F27;
+  box-shadow: 0 10px 30px -10px rgba(238, 159, 39, 0.4);
+}
+
+/* Facebook Button Hover */
+.bg-\[\#EE9F27\]:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 35px -5px rgba(238, 159, 39, 0.5);
+  animation: elasticBounce 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bg-\[\#EE9F27\]:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* Card Title Hover */
+.brew-card:hover h3 {
+  color: #d97706;
+  transition: color 0.3s ease;
+}
+
+/* Staggered Animation Delays */
+.brew-card:nth-child(1) { animation-delay: 0.1s; }
+.brew-card:nth-child(2) { animation-delay: 0.2s; }
+.brew-card:nth-child(3) { animation-delay: 0.3s; }
+.brew-card:nth-child(4) { animation-delay: 0.4s; }
+.brew-card:nth-child(5) { animation-delay: 0.5s; }
+.brew-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .brew-card:hover,
+  .brew-card:active {
+    transform: translateY(-6px);
+  }
+  
+  .brew-card:hover .h-30,
+  .brew-card:active .h-30 {
+    transform: scale(1.05);
+  }
+  
+  .bg-\[\#EE9F27\]:hover,
+  .bg-\[\#EE9F27\]:active {
+    transform: translateY(-2px);
+  }
+  
+  /* Touch feedback for mobile */
+  .brew-card {
+    -webkit-tap-highlight-color: rgba(238, 159, 39, 0.2);
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 </style>

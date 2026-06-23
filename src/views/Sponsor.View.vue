@@ -2,17 +2,16 @@
   <section class="px-4 py-7 min-h-screen bg-[#FAF9F5]">
     <div class="mx-auto max-w-6xl">
       <!-- Header with Animation -->
-      <div class="text-center animate-fade-in-down">
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">
-          OUR SPONSORS
-        </p>
-        <h1 class=" text-3xl font-bold text-gray-900 sm:text-4xl">
-          <span class="text-[#EE9F27]">Sponsors </span>at the Cambodian Craft Beer Crown 2026
+      <div class="text-center mb-10 animate-fade-in-down">
+        <span class="inline-flex items-center gap-2 text-amber-600 font-extrabold uppercase tracking-[3px] text-base animate-fade-in-up">
+          Our Partners
+        </span>
+        <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl animate-fade-in-up" style="animation-delay: 0.1s;">
+          Sponsors
         </h1>
-        <p class="mx-auto mt-2 max-w-2xl text-sm text-gray-500 leading-relaxed">
-          We thank our generous sponsors who make the Cambodian Craft Beer Crown 2025 possible. And we are proud to partner with these incredible organizations who share our passion for craft beer excellence.
+        <p class="max-w-2xl mx-auto text-slate-500 mt-3 text-sm md:text-base animate-fade-in-up" style="animation-delay: 0.2s;">
+          We thank our generous sponsors who make the Cambodian Craft Beer Crown 2026 possible. And we are proud to partner with these incredible organizations who share our passion for craft beer excellence.
         </p>
-        <div class="w-40 h-[2px] bg-[#EE9F27] mx-auto mt-3 animate-scale-x"></div>
       </div>
 
       <!-- Platinum Sponsors -->
@@ -381,11 +380,13 @@ const getInitials = (name) => {
 
 <style scoped>
 .group {
-  transition: all 0.2s ease;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
 }
 
 .group:hover {
-  transform: translateY(-3px);
+  transform: translateY(-12px) rotateX(5deg);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
 }
 
 /* Custom 35x35 size class */
@@ -396,11 +397,11 @@ const getInitials = (name) => {
   width: 140px;
 }
 
-/* Animations */
+/* Professional Fade In Down Animation */
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
@@ -408,6 +409,7 @@ const getInitials = (name) => {
   }
 }
 
+/* Professional Fade In Up Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -419,6 +421,19 @@ const getInitials = (name) => {
   }
 }
 
+/* Professional Scale In Animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scale X Animation */
 @keyframes scaleX {
   from {
     transform: scaleX(0);
@@ -428,30 +443,171 @@ const getInitials = (name) => {
   }
 }
 
+/* Pulse Soft Animation */
 @keyframes pulseSoft {
   0%, 100% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.02);
+    transform: scale(1.03);
+  }
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Elastic Bounce */
+@keyframes elasticBounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
 .animate-fade-in-down {
-  animation: fadeInDown 0.8s ease-out forwards;
+  animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   opacity: 0;
 }
 
+.animate-scale-in {
+  animation: scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 .animate-scale-x {
-  animation: scaleX 0.6s ease-out forwards;
+  animation: scaleX 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   transform-origin: center;
 }
 
 .animate-pulse-soft {
-  animation: pulseSoft 2s ease-in-out infinite;
+  animation: pulseSoft 3s ease-in-out infinite;
 }
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-elastic {
+  animation: elasticBounce 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Sponsor Card Hover Effects */
+.group:hover img {
+  transform: scale(1.12) rotate(3deg);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover h3 {
+  color: #d97706;
+  transition: color 0.3s ease;
+}
+
+/* Border Color Animation on Hover */
+.group:hover {
+  border-color: #EE9F27 !important;
+}
+
+/* Tier Badge Animation */
+.animate-pulse-soft:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px -5px rgba(238, 159, 39, 0.3);
+}
+
+/* Logo Container Hover */
+.group .border-2 {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .border-2 {
+  border-color: #EE9F27;
+  box-shadow: 0 10px 30px -10px rgba(238, 159, 39, 0.4);
+}
+
+/* Fallback Initials Container Hover */
+.group:hover .bg-gray-50,
+.group:hover .bg-amber-50 {
+  background-color: #fef3c7;
+  transform: scale(1.05);
+}
+
+/* Staggered Animation Delays */
+.group:nth-child(1) { animation-delay: 0.1s; }
+.group:nth-child(2) { animation-delay: 0.2s; }
+.group:nth-child(3) { animation-delay: 0.3s; }
+.group:nth-child(4) { animation-delay: 0.4s; }
+.group:nth-child(5) { animation-delay: 0.5s; }
+.group:nth-child(6) { animation-delay: 0.6s; }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .group:hover,
+  .group:active {
+    transform: translateY(-6px);
+  }
+  
+  .group:hover img,
+  .group:active img {
+    transform: scale(1.05);
+  }
+  
+  .group:hover .border-2,
+  .group:active .border-2 {
+    transform: none;
+  }
+  
+  .group:hover .bg-gray-50,
+  .group:hover .bg-amber-50,
+  .group:active .bg-gray-50,
+  .group:active .bg-amber-50 {
+    transform: scale(1.01);
+  }
+  
+  /* Touch feedback for mobile */
+  .group {
+    -webkit-tap-highlight-color: rgba(238, 159, 39, 0.2);
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 </style>
